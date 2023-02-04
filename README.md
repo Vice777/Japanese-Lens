@@ -1,4 +1,5 @@
 # Japanese Lense
+Objective:  The model would be able to provide the caption for images taken through camera and convert them into Japanese Script and also provide a hearing and pronunciation testing to improve listening and speaking skills. 
 ___
 Link : https://vice777-japanese-lens-app-sbeol5.streamlit.app/
 ___
