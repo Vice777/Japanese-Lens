@@ -8,12 +8,12 @@ import pickle
 from PIL import Image
 import time
 
-from keras.applications import Xception
-from keras.models import load_model
+
+from tensorflow.keras.applications import Xception
+from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-from tqdm.notebook import tqdm
-tqdm().pandas()
+from tqdm import tqdm
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title('Image Caption')
@@ -81,7 +81,7 @@ def generate_desc(model, tokenizer, photo, max_length):
     return in_text
 
 
-path = './Flickr8k_Dataset/Flicker8k_Dataset/107318069_e9f2ef32de.jpg'
+#path = './Flickr8k_Dataset/Flicker8k_Dataset/107318069_e9f2ef32de.jpg'
 
 
 nav_choice = st.sidebar.radio('Navigation', ['Home'], index=0)
